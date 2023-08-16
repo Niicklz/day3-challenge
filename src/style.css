@@ -1,0 +1,154 @@
+body {
+  background-color: #222222;
+}
+#app {
+  position: relative;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+
+
+.menuIcon {
+
+
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+
+
+}
+ul {
+  position: fixed;
+  bottom: 30px;
+  left: -300px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: 1s;
+}
+
+.active {
+  left: 30px;
+}
+
+.active li:nth-child(1) {
+  padding-left: 1rem;
+}
+.active li:nth-child(2) {
+  padding-left: 2rem;
+}
+.active li:nth-child(3) {
+  padding-left: 3rem;
+}
+li {
+  color: #FFFFFF;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: 1s;
+ 
+}
+
+
+
+.container {
+  padding: 12rem 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+  transform-origin: top left;
+    transition: transform 0.5s linear;
+transition: 1s;
+ 
+}
+
+.rotate-container {
+ 
+  transform: rotate(-22deg);
+ 
+  transition: 1s;
+}
+
+figure {
+  width: 100%;
+  margin: 0 auto;
+  
+
+}
+
+
+
+figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+main {
+  width: 70%;
+  margin: 0 auto;
+  
+  background-color: #FFFFFF;
+  color: #222222;
+  
+ 
+  
+  
+}
+.rotating-menu {
+  width: 200px;
+    height: 200px;
+    background-color: #FF7979;
+    border-radius: 50%;
+  z-index: 1000;
+  position: absolute;
+    top: -120px;
+    left: -120px;
+    transition: 1s;
+    
+}
+
+.rotate {
+  transform: rotate(-85deg);
+  transition: 1s;
+}
+
+
+.rotating-menu span:nth-child(1) {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  cursor: pointer;
+  }
+  .rotating-menu span:nth-child(2) {
+      position: absolute;
+  bottom: 35px;
+  right: 130px;
+  cursor: pointer;
+  transform: rotate(-4deg);
+  }
+
+.material-symbols-outlined {
+  color: #FFFFFF;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 900,
+  'GRAD' 0,
+  'opsz' 72
+
+  
+}
+
+
